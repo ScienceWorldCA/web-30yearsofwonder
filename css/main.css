@@ -8,7 +8,10 @@ form,fieldset,input,textarea,p,blockquote,th,td {
 }
 a{
 	text-decoration:none;
+  color: #fff!important;
 }
+
+a:hover {color: #feb600!important}
 table {
     border-spacing: 0;
 }
@@ -48,32 +51,43 @@ abbr,acronym { border: 0;
  * --------------------------------------- */
 body{
 	font-family: 'Lato', Calibri, Arial, sans-serif;
-	color: #f2f2f2;
+	color: #f2f2f2!important;
 }
 h1{
 	font-size: 6em;
 }
-p{
-	font-size: 2em;
-}
-.section{
-	text-align: center;
-}
+
+.section{ }
 
  /* Style for our header texts
 	* --------------------------------------- */
 	h1{
-		font-size: 5em;
-		font-family: arial,helvetica;
-		color: #fff;
-		margin:0;
-		padding:0;
+	  font-weight: 600!important;
+	  text-transform: uppercase!important;
+	  font-family: 'Open Sans', sans-serif!important;
+	  font-size: 30px!important;
+		color: #feb600!important;
 	}
+
+  h2 {font-size:
+    font-weight: 600!important;
+    font-family: 'Open Sans', sans-serif!important;
+    font-size: 18px!important;
+  }
+
+  /* History page
+	* --------------------------------------- */
+
+.history_wrapper {background-color: #000;}
+
+.history_bg_1 {}
+
+.history_title {padding: 10%;}
 
 	/* Centered texts in each section
 	* --------------------------------------- */
 	.section{
-		text-align:center;
+
 	}
 
 
@@ -82,7 +96,7 @@ p{
 	#section1,
 	#section2,
 	#section3,
-  #section4{
+  	#section4{
 		background-size: cover;
 	}
 
@@ -208,19 +222,16 @@ p{
 		background-color: #000;
     width: 100%;
     height: 100%;
+    text-align: left;
 	}
 
-  #interviews .intro{
-		position: absolute;
-		left: 0;
-		right: 0;
-		margin: 0 auto;
-		top: 350px;
-	}
+  .interview_intro {
+    margin: 30px;
+  }
 
 	#interviews h1,
-	#interviews p{ }
-
+  #interviews h2,
+	#interviews p {padding: 0px; margin: 0px;}
 
 	#section2{
 		background-color: #333;
@@ -233,35 +244,78 @@ p{
 		left: 0;
 		right: 0;
 		margin: 0 auto;
-		top: 350px;
+		top: 50px;
 	}
 
-	#section2 h1,
-	#section2 p{ }
+	#interviews p{ font-size: 18px;}
+	#section2 p{ font-size: 18px;}
+  #section2 h1{ font-size: 30px;}
 
 	#section3{
-		background-image: url(../images/future_bg.png);
-    width: 100%;
-    height: 100%;
+		background-image: url(../images/past_bg.png);
+		width: 100%;
+		height: 100%;
+
 	}
 
-	#section3 h1{
-		color: #000;
-	}
-
-  #section3 h1,
   #section3 p{
     color: #fff;
+	  font-size: 24px;
   }
 
+#section3 a {
+  border: solid 1px #fff;
+	padding: 10px 20px;
+	font-weight: bold;
+	width: 150px;
+	text-align: center;
+	text-transform: uppercase;
+	margin-top: 10px;
+	color: #fff;
+	font-size: 15px;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+.past_intro {
+	margin-left: 50%;
+	width: 550px;
+}
+
   #section4{
-		background-color: #000;
+	background-repeat: repeat;
     width: 100%;
     height: 100%;
+    background-color: #000;
 	}
+
+  #section4 .intro {
+    text-align: center;
+    width: 700px;
+    margin: 0px auto;
+  }
+
+  #section4 a {
+    border: solid 1px #fff;
+  	padding: 10px 20px;
+  	font-weight: bold;
+  	width: 150px;
+  	text-align: center;
+  	text-transform: uppercase;
+  	margin-top: 10px;
+  	color: #fff;
+  	font-size: 15px;
+    letter-spacing: 1px;
+    text-decoration: none;
+  }
 
   #section4 h1{
     z-index: 10000;
+  }
+
+  #section4 h4{
+    font-size: 30px;
+    line-height: normal;
   }
 
   #section4 h1,
@@ -270,10 +324,7 @@ p{
   }
 
   .intro {
-  	width: 50%;
-  	margin: 0 auto;
-  	font-size: 1.5em;
-    z-index: 15000;
+
   }
 
   .overlay1,
