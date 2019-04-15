@@ -63,8 +63,7 @@
   left: 15%;
   right: 0%;
   width: 25%;
-  top: 15%;
-  padding: 10px;
+  top: 25%;
   text-align: left;
   text-shadow: none;
 }
@@ -73,6 +72,7 @@
   font-weight: bold;
   margin: 0px 0px 5px 0px;
   text-transform: uppercase;
+  color: #67f2ff;
   -webkit-animation-delay: 1s;
   animation-delay: 1s;
   -webkit-animation-timing-function: cubic-bezier(.22,.81,.01,.99);
@@ -147,7 +147,7 @@
 /*------------------------------------------------------*/
 
 .thumbnail_image_left_carousel_wrapper{
-  background: #000000;
+
 }
 /*---------- INDICATORS THUMBNAIL IMAGES ----------*/
 .thumbnail_image_left_carousel_indicators{

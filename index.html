@@ -35,8 +35,49 @@
 					});
 	    });
     </script>
+		<!-- Page Loader Progress Bar -->
+		<script type="text/javascript">
+			;(function(){
+				function id(v){return document.getElementById(v); }
+				function loadbar() {
+				var ovrl = id("overlay"),
+						prog = id("progress"),
+						stat = id("progstat"),
+						img = document.images,
+						c = 0;
+						tot = img.length;
+
+				function imgLoaded(){
+					c += 1;
+					var perc = ((100/tot*c) << 0) +"%";
+					prog.style.width = perc;
+					stat.innerHTML = "Loading "+ perc;
+					if(c===tot) return doneLoading();
+				}
+				function doneLoading(){
+					ovrl.style.opacity = 0;
+					setTimeout(function(){
+						ovrl.style.display = "none";
+					}, 1200);
+				}
+				for(var i=0; i<tot; i++) {
+					var tImg     = new Image();
+					tImg.onload  = imgLoaded;
+					tImg.onerror = imgLoaded;
+					tImg.src     = img[i].src;
+				}
+				}
+				document.addEventListener('DOMContentLoaded', loadbar, false);
+				}());
+		</script>
 </head>
 <body>
+	<!-- Page Loader Progress Bar -->
+	<div id="overlay">
+    <div id="progstat"></div>
+    <div id="progress"></div>
+  </div>
+	<!-- Page Loader Progress Bar -->
 
 	<div id="pagepiling">
 	    <div class="section" id="section1">
@@ -54,9 +95,9 @@
 				<div class="bg_bottom_7"></div>
 
 	    </div>
-		<div class="section" id="interviews">
+		<div class="section" id="interviews" data-anchor="interviews">
 			<div class="interview_intro">
-				<h1>Science World Stories</h1>
+				<h1>Science World</br> Stories</h1>
 				<h2>12 inspiring and empowering stories from science enthusiasts and supporters</h2>
 			</div>
 			<div id="thumbnail_image_left_carousel" class="carousel slide animate_text thumbnail_image_left_carousel_wrapper swipe_x ps_easeOutCirc" data-ride="carousel" data-duration="2000" data-interval="false" data-pause="hover">
@@ -87,7 +128,7 @@
 						<div class="carousel-caption thumbnail_image_left_carousel_caption">
 							<h1>Cybele Negris</h1>
 							<p>Cybele Negris, a member of Science World’s Chair’s Council, is helping to ignite a passion for science in young girls</p>
-							</br><a href="#">Read the Interview</a>
+						</br><a href="cybele.html">Read the Interview</a>
 						</div>
 					</div>
 
@@ -97,7 +138,7 @@
 						<div class="carousel-caption thumbnail_image_left_carousel_caption">
 							<h1>Barbara Brink</h1>
 							<p>For Barbara Brink, founding CEO and Chair of Science World, the organization has always been about much more than putting on exhibits.</p>
-							</br><a href="#">Read the Interview</a>
+						</br><a href="barbara.html">Read the Interview</a>
 						</div>
 					</div>
 
@@ -107,7 +148,7 @@
 						<div class="carousel-caption thumbnail_image_left_carousel_caption">
 							<h1>Bob and Lily Lee</h1>
 							<p>Bob and Lily Lee, two of BC’s philanthropists, believe that creating prosperity starts with making a commitment to education and youth</p>
-							</br><a href="#">Read the Interview</a>
+						</br><a href="lees.html">Read the Interview</a>
 						</div>
 					</div>
 
@@ -117,11 +158,10 @@
 
 		</div>
 
-		<div class="section" id="section2">
+		<div class="section" id="section2" data-anchor="future">
 	    	<div class="intro">
-					<div class="interview_intro">
-						<h1>BC’s Thriving Future</h1>
-						<h2>We are Full STEAM Ahead with:</h2>
+					<div class="future_intro">
+						<center><h1>BC’s Thriving Future</h1></center>
 					</div>
 					<!--*-*-*-*-*-*-*-*-*-*- BOOTSTRAP CAROUSEL *-*-*-*-*-*-*-*-*-*-->
 
@@ -139,10 +179,9 @@
 												<img src="images/team_01.png" alt="slider 03" />
 											</div>
 											<div class="commerce_columns_item_caption">
-												<h1>Girls and STEAM</h1>
-												<p>Empowering girls to pursue their STEAM passions through workshops, speakers and mentors.</p>
-												<p>A symposium and showcase that empowers girls to pursue their STEAM passions through workshops, speakers and mentors.</p>
-
+												<h3>Girls and STEAM</h3>
+												<p>Empowering girls to pursue their STEAM passions through workshops, speakers and mentors. A symposium and showcase that empowers girls to pursue their STEAM passions through workshops, speakers and mentors.</p>
+											</br><a href="https://www.scienceworld.ca/girls-steam">Find Out More</a>
 											</div>
 										</div>
 									</div>
@@ -158,9 +197,9 @@
 												<img src="images/team_02.png" alt="slider 03" />
 											</div>
 											<div class="commerce_columns_item_caption">
-												<h1>Future Science Leaders</h1>
+												<h3>Future Science Leaders</h3>
 												<p>Inspiring and challenging top students to excel in science and innovation through programming from and networking with BC’s top science, technology and business leaders, and peers.</p>
-
+											</br><a href="https://www.scienceworld.ca/futurescienceleaders">Find Out More</a>
 											</div>
 										</div>
 									</div>
@@ -176,9 +215,9 @@
 												<img src="images/team_03.png" alt="slider 03" />
 											</div>
 											<div class="commerce_columns_item_caption">
-												<h1>Symbiosis</h1>
+												<h3>Symbiosis</h3>
 												<p>Canada's first STEAM Learning Ecosystem to scale science literacy across BC by providing quality STEAM learning opportunities for all children and youth, regardless of geography, ethnicity or family income.</p>
-
+												</br><a href="http://www.symbiosis.ca/">Find Out More</a>
 											</div>
 										</div>
 									</div>
@@ -189,34 +228,39 @@
 
 						<!--======= Navigation Buttons =========-->
 
-						<!--======= Left Button =========-->
-						<a class="carousel-control-prev commerce_columns_carousel_control_left adv_left" href="#adv_commerce_3_columns_carousel" data-slide="prev">
-							<span class="fa fa-angle-left commerce_columns_carousel_control_icons" aria-hidden="true"></span>
-						</a>
 
-						<!--======= Right Button =========-->
-						<a class="carousel-control-next commerce_columns_carousel_control_right adv_right" href="#adv_commerce_3_columns_carousel" data-slide="next">
-							<span class="fa fa-angle-right commerce_columns_carousel_control_icons" aria-hidden="true"></span>
-						</a>
 
 					</div> <!--*-*-*-*-*-*-*-*-*-*- END BOOTSTRAP CAROUSEL *-*-*-*-*-*-*-*-*-*-->
+					<!--======= Left Button =========-->
+					<a class="carousel-control-prev commerce_columns_carousel_control_left adv_left" href="#adv_commerce_3_columns_carousel" data-slide="prev">
+						<span class="fa fa-angle-left commerce_columns_carousel_control_icons" aria-hidden="true"></span>
+					</a>
 
+					<!--======= Right Button =========-->
+					<a class="carousel-control-next commerce_columns_carousel_control_right adv_right" href="#adv_commerce_3_columns_carousel" data-slide="next">
+						<span class="fa fa-angle-right commerce_columns_carousel_control_icons" aria-hidden="true"></span>
+					</a>
 
 	    	</div>
 	    </div>
-	    <div class="section" id="section3">
+	    <div class="section" id="section3"  data-anchor="history">
 	    	<div class="past_intro">
-	    		<h2>Explore some of our favourite memories from the last 30 years</h2>
-				<br/><a href="history.html">Take Me Back</a>
+	    		<h4>Explore some of our favourite memories </h4>
+				<h2>From the last 30 years</h2>
+				<br/><br/><a href="history.html">Take Me Back</a>
 	    	</div>
 	    </div>
-			<div class="section" id="section4">
+			<div class="section" id="section4" data-anchor="share">
 		    	<div class="intro">
 		    		<h1>Share Your Favourite Memories</h1>
-		    		<h4>From your Ha-ha! to your Ah-ha! moment, we want to hear your favourite memory of Science World.</h4>
-						</br><a href="">Record Your Memory</a></br></br></br>
+		    		<h3>From your Ha-ha! to your Ah-ha! moment, we want to hear your favourite memory of Science World.</h3>
+						</br>
+						<a href="https://scienceworld.storytap.com/130/signup?ref=30-anniversary">Record Your Memory</a>
+					  </br></br></br>
 						<p>Help us create those Ah-ha! moments in communities across the province!</p>
-						</br><a href="">Donate</a>
+						</br>
+						<a href="https://www.scienceworld.ca/donate">Donate</a>
+
 						<div class="bg_top_1"></div>
 						<div class="bg_top_2"></div>
 						<div class="bg_top_3"></div>

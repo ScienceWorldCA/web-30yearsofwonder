@@ -1,25 +1,3 @@
-/*
-	StyleSheet For Responsive Bootstrap Carousel 4
-	Author: szthemes
-	Item Name: Responsive Bootstrap Carousel 4
-	Author URI: http://codecanyon.net/user/szthemes
-	Description: Different Types of Bootstrap Carousel 4
-
-  ------------------------------------------------------------------
-							Fonts Styles
-  ------------------------------------------------------------------
-	  'Oswald', sans-serif ----------------------------------- 01
-	            FontAwesome ---------------------------------- 02
-  ------------------------------------------------------------------
-							Color Codes
-  ------------------------------------------------------------------
-	NAME    ------------------------RGB-------------------------- #
-	#ffffff -------------------rgb(255, 255, 255)---------------- 01
-	#171717 -------------------rgb(23, 23, 23)------------------- 02
-	#feb600 -------------------rgb(254, 182, 0)------------------ 03 	Replace Also This Color To Change Whole Color Scheme
-	#fec433 -------------------rgb(254, 196, 51)----------------- 04 	Replace Also This Color To Change Whole Color Scheme
-*/
-
 /*------------------------------------------------------*/
 /* COMMERCE COLUMNS CAROUSEL
 /*------------------------------------------------------*/
@@ -32,7 +10,8 @@
 /*---------- LEFT/RIGHT CONTROL ----------*/
 .commerce_columns_carousel_control_left,
 .commerce_columns_carousel_control_right{
-  top: 26px;
+  left: 20px;
+  top: 20px;
   z-index: 2;
   opacity: 1;
   width: 35px;
@@ -135,7 +114,7 @@
 .commerce_columns_carousel_control_right:active,
 .commerce_columns_carousel_control_right:focus{
   color: #ffffff;
-  background: #feb600 !important;
+  background: #ff7800 !important;
 }
 /*---------- CAPTION ----------*/
 .commerce_columns_item_caption{
@@ -147,20 +126,29 @@
 }
 .commerce_columns_item_caption>h3 a:hover,
 .commerce_columns_item_caption>h3 a:active{
-  color: #feb600;
+  color: #67f2ff;
 }
 .commerce_columns_item_caption h4{
-  color: #feb600;
+  color: #67f2ff;
 }
 .commerce_columns_item_caption> a,
 .commerce_columns_item_caption> a:visited{
-  color: #171717;
-  background: #feb600;
-  border-bottom: 2px solid #cb9200;
+  font-size: 15px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-transition: color 0.3s ease 0s;
+  transition: color 0.3s ease 0s;
+	border: solid 1px #fff;
+	padding: 10px 20px;
+	font-weight: bold;
+	width: 150px;
+	text-align: center;
+  color: #fff;
 }
 .commerce_columns_item_caption> a:hover,
 .commerce_columns_item_caption> a:active{
-  background: #fec433;
+  color: #ff7800;
 }
 /*------------------------------------------------------*/
 /* SLIDING TIMING FUNCTIONS

@@ -9,12 +9,25 @@ form,fieldset,input,textarea,p,blockquote,th,td {
 
 html, body {min-height: 100%;}
 
-a {
+a{
 	text-decoration:none;
-  color: #fff!important;
+  border: solid 1px #fff;
+	padding: 10px 20px;
+	font-weight: bold;
+	width: 150px;
+	text-align: center;
+	text-transform: uppercase;
+	margin-top: 10px;
+	color: #fff;
+	font-size: 15px;
+  letter-spacing: 1px;
+  text-decoration: none;
 }
 
-a:hover {color: #feb600!important}
+a:hover {
+  color: #fff;
+  text-decoration: none;
+}
 
 table {
     border-spacing: 0;
@@ -45,11 +58,10 @@ caption,th {
 }
 
 h1,h2,h3,h4,h5,h6 {
-    font-weight: normal;
-    font-size: 100%;
-    margin:0;
-    padding:0;
-    color:#f2f2f2;
+  font-weight: 600;
+  font-family: 'Open Sans', sans-serif;
+  margin:0;
+  padding:0;
 }
 
 q:before,q:after {
@@ -65,29 +77,81 @@ body{
 	font-family: 'Lato', Calibri, Arial, sans-serif;
 	color: #f2f2f2!important;
 }
-h1{
-	font-size: 6em;
-}
 
 .section{ }
 
  /* Style for our header texts
 	* --------------------------------------- */
-	h1{
-	  font-weight: 600;
-	  font-family: 'Open Sans', sans-serif;
-	  font-size: 30px;
-		color: #feb600;
+  h1{
+	  font-size: 80px;
+		color: #ff7800;
+    text-transform: uppercase;
 	}
 
-  h2 {font-size:
-    font-weight: 600;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 18px;
+  h2 {
+    font-size: 25px;
+  }
+
+  h3 {
+    font-size: 20px;
+    color: #ff7800;
+    text-transform: uppercase;
+  }
+
+  h4 {
+    font-size: 55px;
+    color: #67f2ff;
+    text-transform: uppercase;
   }
 
   /* History page
 	* --------------------------------------- */
+
+.history_bg {
+  background-color: #000;
+  display: block;
+  width: 100%;
+  float: left;
+  clear: both;
+}
+
+.history_bg_aqua {
+  background-color: #67f2ff;
+  padding: 5%;
+  display: block;
+  width: 100%;
+  float: left;
+  clear: both;
+}
+
+.history_bg_orange {
+  background-color: #ff7800;
+  padding: 5%;
+  display: block;
+  width: 100%;
+  float: left;
+  clear: both;
+}
+
+
+.history_bg_aqua .history_title h1,
+.history_bg_orange .history_title h1 {
+  color: #000;
+  text-transform: none;
+  margin: 0px;
+  padding: 0px;
+  font-size: 80px;
+}
+
+.history_bg_aqua .history_title h2,
+.history_bg_orange .history_title h2 {
+  color: #000;
+  text-transform: none;
+  margin: 0px;
+  padding: 0px;
+  font-size: 40px;
+}
+
 
 .history_wrapper {background-color: #000;}
 
@@ -102,8 +166,7 @@ h1{
   background-size: cover;
 }
 
-.history_intro h1 {font-size: 80px; text-shadow: 0px 0px 5px rgba(0, 0, 0, 1); text-transform: uppercase;}
-.history_intro h2 {font-size: 40px; text-shadow: 0px 0px 5px rgba(0, 0, 0, 1);}
+.history_intro h2 {font-size: 40px;}
 
 .history_intro_1 {
   position: relative;
@@ -121,38 +184,34 @@ h1{
   min-height: 200px;
 }
 
-.history_bg_2 {
-  background-color: #feb600;
-  padding: 5%;
-  display: block;
-  width: 100%;
-  float: left;
-  clear: both;
-}
+
 
 .visitor_intro {}
 
 .visitor_intro h1 {
   color: #000;
+  text-transform: none;
   margin: 0px;
   padding: 0px;
   font-size: 80px;
 }
 
 .visitor_title_wrapper {
-  margin: 25% 10%;
-  padding: 20px;
+  padding: 50px;
 }
 
 .visitor_title {
+  min-height: 400px;
+}
+
+.visitor_title h1 {
   text-shadow: 0px 0px 5px rgba(0, 0, 0, 1);
-  min-height: 150px;
+  font-size: 35px;
 }
 
 .visitor {
   float:left;
   width: 33%;
-  padding-bottom: 2%; /* = width for a 1:1 aspect ratio */
   background-color: #1E1E1E;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -188,4 +247,93 @@ h1{
 .visitors_6 {
   position: relative;
   background: url(../images/visitor_6.png) no-repeat right center;
+}
+
+.history_quiz_wrapper {
+  padding: 10px;
+}
+
+.history_quiz_title {
+  min-height: 500px;
+}
+
+.history_quiz_title h1 {
+  font-size: 200px;
+}
+
+.history_quiz {
+  float:left;
+  width: 33%;
+  background-color: #1E1E1E;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.history_quiz_1 {
+  position: relative;
+  background: url(../images/history_quiz_1.png) no-repeat left center;
+}
+
+.history_quiz_2 {
+  position: relative;
+  background: url(../images/history_quiz_2.png) no-repeat center center;
+}
+
+.history_quiz_3 {
+  position: relative;
+  background: url(../images/history_quiz_3.png) no-repeat center center;
+}
+
+.history_quiz_4 {
+  position: relative;
+  background: url(../images/history_quiz_4.png) no-repeat center center;
+}
+
+.history_quiz_5 {
+  position: relative;
+  background: url(../images/history_quiz_5.png) no-repeat center center;
+}
+
+.history_quiz_6 {
+  position: relative;
+  background: url(../images/history_quiz_6.png) no-repeat right center;
+}
+
+
+.interview_banner_cybele {
+  background: url(../images/Cybele_Banner.png) no-repeat left center;
+  float:left;
+  width: 100%;
+  background-color: #1E1E1E;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding: 15% 5%;
+}
+
+.interview_banner_barbara {
+  background: url(../images/Barbara_Banner.png) no-repeat left center;
+  float:left;
+  width: 100%;
+  background-color: #1E1E1E;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding: 15% 5%;
+}
+
+.interview_banner_lees {
+  background: url(../images/Lees_Banner.png) no-repeat left center;
+  float:left;
+  width: 100%;
+  background-color: #1E1E1E;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding: 15% 5%;
 }
