@@ -1,111 +1,6 @@
 @CHARSET "ISO-8859-1";
-/* Reset CSS
- * --------------------------------------- */
-body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
-form,fieldset,input,textarea,p,blockquote,th,td {
-    padding: 0;
-    margin: 0;
-}
 
-html, body {min-height: 100%;}
-
-a{
-	text-decoration:none;
-  border: solid 1px #fff;
-	padding: 10px 20px;
-	font-weight: bold;
-	width: 150px;
-	text-align: center;
-	text-transform: uppercase;
-	margin-top: 10px;
-	color: #fff;
-	font-size: 15px;
-  letter-spacing: 1px;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #fff;
-  text-decoration: none;
-}
-
-table {
-    border-spacing: 0;
-}
-
-fieldset,img {
-    border: 0;
-}
-
-address,caption,cite,code,dfn,em,strong,th,var {
-    font-weight: normal;
-    font-style: normal;
-}
-
-strong{
-	font-weight: bold;
-}
-
-ol,ul {
-    list-style: none;
-    margin:0;
-    padding:0;
-}
-
-caption,th {
-    text-align: left;
-
-}
-
-h1,h2,h3,h4,h5,h6 {
-  font-weight: 600;
-  font-family: 'Open Sans', sans-serif;
-  margin:0;
-  padding:0;
-}
-
-q:before,q:after {
-    content:'';
-}
-
-abbr,acronym { border: 0;
-}
-
-/* Custom CSS
- * --------------------------------------- */
-body{
-	font-family: 'Lato', Calibri, Arial, sans-serif;
-	color: #f2f2f2!important;
-}
-
-.section{ }
-
- /* Style for our header texts
-	* --------------------------------------- */
-  h1{
-	  font-size: 80px;
-		color: #ff7800;
-    text-transform: uppercase;
-	}
-
-  h2 {
-    font-size: 25px;
-  }
-
-  h3 {
-    font-size: 20px;
-    color: #ff7800;
-    text-transform: uppercase;
-  }
-
-  h4 {
-    font-size: 55px;
-    color: #67f2ff;
-    text-transform: uppercase;
-  }
-
-  /* History page
-	* --------------------------------------- */
+html {width: 100%;}
 
 .history_bg {
   background-color: #000;
@@ -116,7 +11,7 @@ body{
 }
 
 .history_bg_aqua {
-  background-color: #67f2ff;
+  background-color: #000;
   padding: 5%;
   display: block;
   width: 100%;
@@ -124,32 +19,36 @@ body{
   clear: both;
 }
 
+.history_bg_aqua h1 {
+  color: #67f2ff;
+}
+
 .history_bg_orange {
-  background-color: #ff7800;
+  background-color: #000;
   padding: 5%;
   display: block;
   width: 100%;
   float: left;
   clear: both;
+}
+
+.history_bg_orange h1 {
+  color: #ff7800;
 }
 
 
 .history_bg_aqua .history_title h1,
 .history_bg_orange .history_title h1 {
-  color: #000;
   text-transform: none;
   margin: 0px;
   padding: 0px;
-  font-size: 80px;
 }
 
 .history_bg_aqua .history_title h2,
 .history_bg_orange .history_title h2 {
-  color: #000;
   text-transform: none;
   margin: 0px;
   padding: 0px;
-  font-size: 40px;
 }
 
 
@@ -157,44 +56,30 @@ body{
 
 .history_intro {
   float:left;
-  width: 50%;
-  padding-bottom: 5%; /* = width for a 1:1 aspect ratio */
-  background-color: #1E1E1E;
+  width: 100%;
+  background-color: #000;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 
-.history_intro h2 {font-size: 40px;}
+.history_intro h2 {}
 
 .history_intro_1 {
-  position: relative;
-  background: url(../images/history_intro_1.png) no-repeat left center;
-}
-
-.history_intro_2 {
-  position: relative;
-  background: url(../images/history_intro_2.png) no-repeat left center;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center top;
+  background-attachment: fixed;
+  background-image: url(../images/history_intro_1.png);
 }
 
 .history_intro_title {
-  margin: 10%;
-  padding: 20px;
-  min-height: 200px;
+  margin: 5%;
+  min-height: 500px;
 }
-
-
 
 .visitor_intro {}
-
-.visitor_intro h1 {
-  color: #000;
-  text-transform: none;
-  margin: 0px;
-  padding: 0px;
-  font-size: 80px;
-}
 
 .visitor_title_wrapper {
   padding: 50px;
@@ -205,8 +90,8 @@ body{
 }
 
 .visitor_title h1 {
-  text-shadow: 0px 0px 5px rgba(0, 0, 0, 1);
   font-size: 35px;
+  color: #67f2ff;
 }
 
 .visitor {
@@ -254,7 +139,7 @@ body{
 }
 
 .history_quiz_title {
-  min-height: 500px;
+
 }
 
 .history_quiz_title h1 {
@@ -262,43 +147,57 @@ body{
 }
 
 .history_quiz {
-  float:left;
-  width: 33%;
-  background-color: #1E1E1E;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  position: relative;
+    height: 1000px;
+    z-index: 1;
 }
 
 .history_quiz_1 {
-  position: relative;
-  background: url(../images/history_quiz_1.png) no-repeat left center;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center top;
+  background-attachment: fixed;
+  background-image: url(../images/history_quiz_1.png);
 }
 
 .history_quiz_2 {
-  position: relative;
-  background: url(../images/history_quiz_2.png) no-repeat center center;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center top;
+  background-attachment: fixed;
+  background-image: url(../images/history_quiz_2.png);
 }
 
 .history_quiz_3 {
-  position: relative;
-  background: url(../images/history_quiz_3.png) no-repeat center center;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center top;
+  background-attachment: fixed;
+  background-image: url(../images/history_quiz_3.png);
 }
 
 .history_quiz_4 {
-  position: relative;
-  background: url(../images/history_quiz_4.png) no-repeat center center;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center top;
+  background-attachment: fixed;
+  background-image: url(../images/history_quiz_4.png);
 }
 
 .history_quiz_5 {
-  position: relative;
-  background: url(../images/history_quiz_5.png) no-repeat center center;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center top;
+  background-attachment: fixed;
+  background-image: url(../images/history_quiz_5.png);
 }
 
 .history_quiz_6 {
-  position: relative;
-  background: url(../images/history_quiz_6.png) no-repeat right center;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center top;
+  background-attachment: fixed;
+  background-image: url(../images/history_quiz_6.png);
 }
 
 
