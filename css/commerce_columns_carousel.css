@@ -249,3 +249,12 @@
   transition-timing-function: cubic-bezier(.445,.05,.55,.95);
 }
 /*---------- END ----------*/
+
+@media (min-width: 577px) and (max-width: 1150px){
+.col {
+    position: relative;
+    width: 50%;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}

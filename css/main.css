@@ -30,12 +30,9 @@
     100% { opacity: 0.15; }
   }
 
-  .logo {
-    position: absolute;
-    top: 23%;
-    left: 33%;
-    z-index: 1000;
-  }
+	.logo {margin: 0px auto; width: 800px;}
+
+	.logo img {}
 
   #section1 h1{
 		position: absolute;
@@ -319,13 +316,9 @@
   /*------------------------------------------------------*/
 
 
-  @media only screen and (max-width: 576px){
+  @media only screen and (max-width: 980px){
 
-    .logo {left: 5%;}
-
-    .logo img {
-      width: 100%;
-    }
+		.logo {width: 400px;}
 
 		#section3 {
 			background-image: url(../images/past_bg_mobile.png);
@@ -352,14 +345,9 @@
 
   }
 
-  @media (min-width: 578px) and (max-width: 767px){
 
+  @media (min-width: 981px) and (max-width: 1200px){
 
-
-  }
-
-
-  @media (min-width: 768px) and (max-width: 1200px){
 
 
   }
