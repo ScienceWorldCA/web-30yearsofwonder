@@ -316,37 +316,37 @@
   /*------------------------------------------------------*/
 
 
-  @media only screen and (max-width: 980px){
+@media only screen and (orientation: portrait) {
 
-		.logo {width: 400px;}
+	.logo {width: 400px;}
 
-		#section3 {
-			background-image: url(../images/past_bg_mobile.png);
-			background-color: #000;
-		}
+	#section3 {
+		background-image: url(../images/past_bg_mobile.png);
+		background-color: #000;
+	}
 
-		.future_intro {
-			padding: 0px;
-			margin-bottom: 0px;
-		}
+	.future_intro {
+		padding: 0px;
+		margin-bottom: 0px;
+	}
 
-		.past_intro {
-			margin-left: 0px;
-			width: 400px;
-			margin: 0px auto;
-			text-align: center;
-		}
+	.past_intro {
+		margin-left: 0px;
+		width: 400px;
+		margin: 0px auto;
+		text-align: center;
+	}
 
-		#section4 .intro {
-	    text-align: center;
-	    width: 400px;
-	    margin: 0px auto;
-	  }
+	#section4 .intro {
+		text-align: center;
+		width: 400px;
+		margin: 0px auto;
+	}
 
-  }
+}
 
 
-  @media (min-width: 981px) and (max-width: 1200px){
+    @media only screen and (max-width: 981px) {
 
 
 
