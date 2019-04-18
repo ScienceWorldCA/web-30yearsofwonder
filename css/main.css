@@ -4,6 +4,10 @@
 	.section{
 			padding: 0px;
 			margin: 0px;
+			top: 0px;
+			left: 0px;
+			height: auto;
+			width: 100%;
 	}
 
 
@@ -140,12 +144,12 @@
     height: 100%;
 	}
 
-  #section2 .intro{
-		position: absolute;
-		left: 0;
-		right: 0;
-		margin: 0 auto;
-		top: 50px;
+	#section2 .intro{
+	  position: absolute;
+	  left: 0;
+	  right: 0;
+	  margin: 0 auto;
+	  top: 50px;
 	}
 
 	#section3 {
@@ -154,12 +158,6 @@
 		height: 100%;
 
 	}
-
-  .future_intro {
-    display: block;
-    padding: 20px;
-    margin-bottom: 5%;
-  }
 
 .past_intro {
 	margin-left: 50%;
@@ -325,11 +323,6 @@
 		background-image: url(../images/past_bg_mobile.png);
 	}
 
-	.future_intro {
-		padding: 0px;
-		margin-bottom: 0px;
-	}
-
 	.past_intro {
 		margin-left: 0px;
 		width: 400px;
@@ -366,18 +359,6 @@
 	#section3 {
 		background-image: url(../images/past_bg_mobile.png);
 		background-color: #000;
-	}
-
-	.future_intro {
-		padding: 0px;
-		margin-bottom: 0px;
-	}
-
-	.past_intro {
-		margin-left: 0px;
-		width: 400px;
-		margin: 0px auto;
-		text-align: center;
 	}
 
 	#section4 .intro {

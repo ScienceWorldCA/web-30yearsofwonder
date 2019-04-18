@@ -2,7 +2,7 @@
 /* COMMERCE COLUMNS CAROUSEL
 /*------------------------------------------------------*/
 .commerce_columns_carousel_wrapper{
-  overflow: hidden;
+  overflow: visible;
 }
 .commerce_columns_carousel_wrapper .carousel-item > .row{
   margin: 0;
@@ -19,8 +19,6 @@
   border: none;
   text-shadow: none;
   text-align: center;
-  transition: all ease-in-out 0.3s;
-  -webkit-transition: all ease-in-out 0.3s;
 }
 .commerce_columns_carousel_control_icons{
   line-height: 35px;
@@ -40,36 +38,15 @@
   left: 78px !important;
 }
 /*---------- CAPTION ----------*/
+
 /*---------- IMAGE ----------*/
 .commerce_columns_item_image{
   overflow: hidden;
 }
 .commerce_columns_item_image> img{
   width: 100%;
-  /*-webkit-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  transform: scale(1.1);
-  -webkit-filter: grayscale(100%);
-  -moz-filter: grayscale(100%);
-  -ms-filter: grayscale(100%);
-  -o-filter: grayscale(100%);
-  filter: grayscale(100%);
-  -webkit-transition: all 1s ease 0s;
-  -moz-transition: all 1s ease 0s;
-  -ms-transition: all 1s ease 0s;
-  -o-transition: all 1s ease 0s;
-  transition: all 1s ease 0s;*/
 }
-.commerce_columns_item_inner:hover .commerce_columns_item_image> img{
-  /*-webkit-filter: grayscale(0%);
-  -moz-filter: grayscale(0%);
-  -ms-filter: grayscale(0%);
-  -o-filter: grayscale(0%);
-  filter: grayscale(0%);
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);*/
-}
+.commerce_columns_item_inner:hover .commerce_columns_item_image> img{ }
 /*---------- TEXT ----------*/
 .commerce_columns_item_caption{
   padding: 15px;
@@ -117,6 +94,14 @@
   background: #ff7800 !important;
 }
 /*---------- CAPTION ----------*/
+
+.future_intro {
+  display: block;
+  width: 500px;
+  margin: 40px auto;
+  text-align: center;
+}
+
 .commerce_columns_item_caption{
 
 }
@@ -150,111 +135,20 @@
 .commerce_columns_item_caption> a:active{
   color: #ff7800;
 }
-/*------------------------------------------------------*/
-/* SLIDING TIMING FUNCTIONS
-/*------------------------------------------------------*/
-/*---------- ps_ease ----------*/
-.ps_ease .carousel-item{
-  -webkit-transition-timing-function: ease;
-  transition-timing-function: ease;
-}
-/*---------- ps_easeInOut ----------*/
-.ps_easeInOut .carousel-item{
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-}
-/*---------- ps_speedy ----------*/
-.ps_speedy .carousel-item{
-  -webkit-transition-timing-function: cubic-bezier(0,1,0,1);
-  transition-timing-function: cubic-bezier(0,1,0,1);
-}
-/*---------- ps_slowSpeedy ----------*/
-.ps_slowSpeedy .carousel-item{
-  -webkit-transition-timing-function: cubic-bezier(0.3,1,0,1);
-  transition-timing-function: cubic-bezier(0.3,1,0,1);
-}
-/*---------- ps_easeOutInCubic ----------*/
-.ps_easeOutInCubic .carousel-item{
-  -webkit-transition-timing-function: cubic-bezier(0.22,0.81,0.01,0.99);
-  transition-timing-function: cubic-bezier(0.22,0.81,0.01,0.99);
-}
-/*---------- ps_swing ----------*/
-.ps_swing .carousel-item{
-  -webkit-transition-timing-function: cubic-bezier(.02,.01,.47,1);
-  transition-timing-function: cubic-bezier(.02,.01,.47,1);
-}
-/*---------- ps_easeOutCubic ----------*/
-.ps_easeOutCubic .carousel-item{
-  -webkit-transition-timing-function: cubic-bezier(.215,.61,.355,1);
-  transition-timing-function: cubic-bezier(.215,.61,.355,1);
-}
-/*---------- ps_easeInOutCubic ----------*/
-.ps_easeInOutCubic .carousel-item{
-  -webkit-transition-timing-function: cubic-bezier(.645,.045,.355,1);
-  transition-timing-function: cubic-bezier(.645,.045,.355,1);
-}
-/*---------- ps_easeOutCirc ----------*/
-.ps_easeOutCirc .carousel-item{
-  -webkit-transition-timing-function: cubic-bezier(.075,.82,.165,1);
-  transition-timing-function: cubic-bezier(.075,.82,.165,1);
-}
-/*---------- ps_easeOutExpo ----------*/
-.ps_easeOutExpo .carousel-item{
-  -webkit-transition-timing-function: cubic-bezier(.19,1,.22,1);
-  transition-timing-function: cubic-bezier(.19,1,.22,1);
-}
-/*---------- ps_easeInQuad ----------*/
-.ps_easeInQuad .carousel-item{
-  -webkit-transition-timing-function: cubic-bezier(.55,.085,.68,.53);
-  transition-timing-function: cubic-bezier(.55,.085,.68,.53);
-}
-/*---------- ps_easeOutQuad ----------*/
-.ps_easeOutQuad .carousel-item{
-  -webkit-transition-timing-function: cubic-bezier(.25,.46,.45,.94);
-  transition-timing-function: cubic-bezier(.25,.46,.45,.94);
-}
-/*---------- ps_easeInOutQuad ----------*/
-.ps_easeInOutQuad .carousel-item{
-  -webkit-transition-timing-function: cubic-bezier(.455,.03,.515,.955);
-  transition-timing-function: cubic-bezier(.455,.03,.515,.955);
-}
-/*---------- ps_easeOutQuart ----------*/
-.ps_easeOutQuart .carousel-item{
-  -webkit-transition-timing-function: cubic-bezier(.165,.84,.44,1);
-  transition-timing-function: cubic-bezier(.165,.84,.44,1);
-}
-/*---------- ps_easeInOutQuart ----------*/
-.ps_easeInOutQuart .carousel-item{
-  -webkit-transition-timing-function: cubic-bezier(.77,0,.175,1);
-  transition-timing-function: cubic-bezier(.77,0,.175,1);
-}
-/*---------- ps_easeOutQuint ----------*/
-.ps_easeOutQuint .carousel-item{
-  -webkit-transition-timing-function: cubic-bezier(.23,1,.32,1);
-  transition-timing-function: cubic-bezier(.23,1,.32,1);
-}
-/*---------- ps_easeInSine ----------*/
-.ps_easeInSine .carousel-item{
-  -webkit-transition-timing-function: cubic-bezier(.47,0,.745,.715);
-  transition-timing-function: cubic-bezier(.47,0,.745,.715);
-}
-/*---------- ps_easeOutSine ----------*/
-.ps_easeOutSine .carousel-item{
-  -webkit-transition-timing-function: cubic-bezier(.39,.575,.565,1);
-  transition-timing-function: cubic-bezier(.39,.575,.565,1);
-}
-/*---------- ps_easeInOutSine ----------*/
-.ps_easeInOutSine .carousel-item{
-  -webkit-transition-timing-function: cubic-bezier(.445,.05,.55,.95);
-  transition-timing-function: cubic-bezier(.445,.05,.55,.95);
-}
-/*---------- END ----------*/
 
-@media (min-width: 900px) and (max-width: 1150px){
-.col {
-    width: 50%!important;
-    max-width: 50%!important;
-    padding-right: 15px;
-    padding-left: 15px;
+
+@media only screen and (max-width: 768px) {
+
+  .future_intro {
+    display: block;
+    width: 300px;
+    margin: 20px auto;
+    text-align: center;
+  }
+
+  .commerce_columns_item_caption{
+    text-align: center;
+    width: 300px;
+    margin: 0px auto;
   }
 }

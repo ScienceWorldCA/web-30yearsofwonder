@@ -1,6 +1,7 @@
 
 .carousel-inner {
  overflow: visible;
+ width: 100%;
 }
 
 .thumbnail_image_left_carousel_wrapper{
@@ -54,7 +55,9 @@
 .thumbnail_image_left_carousel_indicators::-webkit-scrollbar{
   width: 5px;
 }
-.thumbnail_image_left_carousel_indicators::-webkit-scrollbar-thumb {display: none;}
+.thumbnail_image_left_carousel_indicators::-webkit-scrollbar-thumb {
+  display: none;
+}
 
 /*---------- CAPTION ----------*/
 .interview_intro {
@@ -136,9 +139,7 @@
 
   .thumbnail_image_left_carousel_caption a,
   .thumbnail_image_left_carousel_caption a:visited{
-    font-size: 10px;
-  	padding: 5px 10px;
-  	width: 50px;
+
   }
 
   .thumbnail_image_left_carousel_caption h1{
