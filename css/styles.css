@@ -199,7 +199,7 @@ body{
   /*------------------------------------------------------*/
 
 
-  @media only screen and (max-width: 576px){
+  @media only screen and (orientation: portrait) {
 
     h1{
       font-size: 35px;
@@ -227,7 +227,7 @@ body{
 
   }
 
-  @media (min-width: 577px) and (max-width: 767px){
+  @media (min-width: 577px) and (max-width: 980px){
 
     h1{
       font-size: 40px;
@@ -250,7 +250,7 @@ body{
   }
 
 
-  @media (min-width: 768px) and (max-width: 1200px){
+  @media (min-width: 981px) and (max-width: 1200px){
 
     h1{
       font-size: 50px;

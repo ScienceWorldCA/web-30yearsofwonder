@@ -63,7 +63,7 @@
   left: 15%;
   opacity: 1;
   z-index: 10000;
-  width: 35%;
+  width: 100%;
 }
 
 .thumbnail_image_left_carousel_caption{
@@ -112,10 +112,9 @@
 /* RESPONSIVE
 /*------------------------------------------------------*/
 
-@media only screen and (max-width: 576px){
+@media only screen and (orientation: portrait) {
 
   .thumbnail_image_left_carousel_indicators{
-    top: 0px;
     right: 70%;
     width: 30%;
   }
@@ -153,48 +152,16 @@
 
 }
 
-@media (min-width: 577px) and (max-width: 1150px){
+@media only screen and (max-width: 1040px) {
 
   .thumbnail_image_left_carousel_indicators{
     top: 0px;
-    right: 80%;
-    width: 20%;
   }
-
-  .interview_intro {
-    top: 57%;
-    left: 25%;
-    width: 100%;
-  }
-
-  .thumbnail_image_left_carousel_caption{
-    left: 25%;
-    right: 0%;
-    width: 45%;
-    top: 75%;
-    text-align: left;
-    text-shadow: none;
-  }
-
-  .thumbnail_image_left_carousel_caption a,
-  .thumbnail_image_left_carousel_caption a:visited{
-    font-size: 12px;
-  	padding: 5px 10px;
-  	width: 50px;
-  }
-
-  .thumbnail_image_left_carousel_caption h1{
-    font-size: 20px;
-  }
-
-  .thumbnail_image_left_carousel_caption h2{
-    font-size: 14px;
-  }
-
 
 }
 
-@media (min-width: 1151px) and (max-width: 1200px){
+
+@media (min-width: 980px) and (max-width: 1200px){
 
   .thumbnail_image_left_carousel_caption h1{
     font-size: 25px;

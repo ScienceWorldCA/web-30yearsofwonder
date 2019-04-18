@@ -318,6 +318,7 @@
 
 @media only screen and (orientation: portrait) {
 
+	.logo img {width: 400px;}
 	.logo {width: 400px;}
 
 	#section3 {
@@ -346,8 +347,39 @@
 }
 
 
-    @media only screen and (max-width: 981px) {
+@media only screen and (max-width: 1000px) {
+
+	.logo img {width: 400px;}
+	.logo {width: 400px;}
+
+	#section3 {
+		background-image: url(../images/past_bg_mobile.png);
+		background-color: #000;
+	}
+
+	.future_intro {
+		padding: 0px;
+		margin-bottom: 0px;
+	}
+
+	.past_intro {
+		margin-left: 0px;
+		width: 400px;
+		margin: 0px auto;
+		text-align: center;
+	}
+
+	#section4 .intro {
+		text-align: center;
+		width: 400px;
+		margin: 0px auto;
+	}
+
+
+}
+
+@media (min-width: 767px) and (max-width: 1200px) {
 
 
 
-  }
+}

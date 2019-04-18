@@ -250,10 +250,10 @@
 }
 /*---------- END ----------*/
 
-@media (min-width: 577px) and (max-width: 1150px){
+@media (min-width: 900px) and (max-width: 1150px){
 .col {
-    position: relative;
-    width: 50%;
+    width: 50%!important;
+    max-width: 50%!important;
     padding-right: 15px;
     padding-left: 15px;
   }
