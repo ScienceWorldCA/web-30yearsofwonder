@@ -151,7 +151,6 @@ body{
   #menu li {
   	display:inline-block;
   	margin: 10px 5px;
-    text-align: center;
   }
 
   #menu li.active{background-color: #ff7800;}
@@ -205,7 +204,7 @@ body{
 @media only screen and (max-width: 576px) {
 
     h1{
-      font-size: 35px;
+      font-size: 25px;
     }
 
     h2 {
@@ -222,10 +221,15 @@ body{
 
     p {font-size: 12px;}
 
-    .logo {left: 5%;}
+    .logo {left: 10%;}
 
     .logo img {
       width: 100%;
+    }
+
+    #menu li {
+    	display:inline-block;
+    	margin: 4px 2px;
     }
 
     #menu li a{
@@ -234,6 +238,12 @@ body{
       padding: 2px 10px;
       width: auto;
       margin: 0px;
+    }
+
+    #menu{
+
+    	height: 30px;
+      overflow: hidden;
     }
 
   }
