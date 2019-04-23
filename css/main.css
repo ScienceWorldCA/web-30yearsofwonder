@@ -333,6 +333,7 @@
 }
 
 @media only screen and (max-width: 576px) {
+
 	.logo img {width: 400px;}
 	.logo {width: 400px;}
 
@@ -352,6 +353,7 @@
 
 
 @media (min-width: 577px) and (max-width: 980px) {
+
 
 	.logo img {width: 400px;}
 	.logo {width: 400px;}

@@ -7,6 +7,12 @@
 .commerce_columns_carousel_wrapper .carousel-item > .row{
   margin: 0;
 }
+
+.carousel-item {
+  transition: transform .0s ease-in-out;
+}
+
+
 /*---------- LEFT/RIGHT CONTROL ----------*/
 .commerce_columns_carousel_control_left,
 .commerce_columns_carousel_control_right{

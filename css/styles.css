@@ -87,7 +87,7 @@ body{
 
 #overlay{
   position:fixed;
-  z-index:99999;
+  z-index: 100000000000000;
   top:0;
   left:0;
   bottom:0;
