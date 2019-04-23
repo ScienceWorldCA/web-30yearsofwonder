@@ -8,6 +8,7 @@
 			left: 0px;
 			height: auto;
 			width: 100%;
+			clear: both;
 	}
 
 
@@ -22,7 +23,7 @@
 
 	/* Defining each section background and styles
 	* --------------------------------------- */
-	#section1{
+	#section1 {
 		background-color: #000;
 	}
 
