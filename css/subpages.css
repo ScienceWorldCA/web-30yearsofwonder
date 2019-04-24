@@ -248,7 +248,7 @@
 @media only screen and (orientation: portrait) {
 
   .history_intro_title {
-    top: 15%;
+    top: 0%;
   }
 
   .history_intro_1 {
@@ -265,7 +265,7 @@
 @media only screen and (max-width: 645px) {
 
   .history_intro_title {
-    top: 15%;
+    top: 0%;
   }
 
   .history_intro_1 {

@@ -8,7 +8,6 @@
 			left: 0px;
 			height: auto;
 			width: 100%;
-			clear: both;
 	}
 
 
@@ -20,6 +19,13 @@
   #section4 {
 		background-size: cover;
 	}
+
+.section,
+.pp-section,
+.pp-table,
+.pp-easing {
+	clear: both;
+}
 
 	/* Defining each section background and styles
 	* --------------------------------------- */

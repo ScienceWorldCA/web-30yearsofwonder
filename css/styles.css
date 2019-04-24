@@ -13,7 +13,7 @@ form,fieldset,input,textarea,p,blockquote,th,td {
     margin: 0;
 }
 
-a{
+a {
 	text-decoration:none;
   border: solid 1px #fff;
 	padding: 10px 20px;
