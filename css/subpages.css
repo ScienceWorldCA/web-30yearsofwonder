@@ -202,7 +202,23 @@
   background-image: url(../images/history_quiz_6.png);
 }
 
-.interveiw_subpages {background-color: #000;}
+.interview_wrapper {
+  background-color: #fff;
+  padding: 5% 25%;
+  display: block;
+  width: 100%;
+  float: left;
+  clear: both;
+}
+
+.interview_wrapper h1 {
+  color: #ff7800;
+}
+
+.interview_wrapper p,
+.interview_wrapper h2 {
+  color: #000;
+}
 
 .interview_image {
   float:left;
@@ -238,7 +254,43 @@
   background-size: cover;
 }
 
+.interview_banner_launi {
+  background: url(../images/Launi_Banner.png) no-repeat left center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.interview_banner_haig {
+  background: url(../images/Haig_Banner.png) no-repeat left center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.interview_banner_rob {
+  background: url(../images/Rob_Banner.png) no-repeat left center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.interview_banner_paige {
+  background: url(../images/Paige_Banner.png) no-repeat left center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 @media only screen and (orientation: portrait) {
+
+  .interview_wrapper {
+    padding: 5%;
+  }
 
   .history_intro_title {
     top: 0%;
@@ -256,6 +308,10 @@
 }
 
 @media only screen and (max-width: 576px) {
+
+  .interview_wrapper {
+    padding: 5%;
+  }
 
   .history_intro_title {
     top: 0%;
@@ -289,6 +345,10 @@
 }
 
 @media (min-width: 577px) and (max-width: 1000px) {
+
+  .interview_wrapper {
+    padding: 5%;
+  }
 
   .history_intro_title {
     top: 15%;
