@@ -5,9 +5,17 @@
 		padding: 0px;
 		margin: 0px;
 		position: relative;
-		min-height: 100%;
 		width: 100%;
 		clear: both;
+		z-index: 1;
+}
+
+.home,
+.stories,
+.initiatives,
+.history,
+.share {
+	min-height: 100%;
 }
 
 
@@ -197,8 +205,24 @@
 		padding: 100px 0px;
 	}
 
-	.page {
-			min-height: 70%;
+	.home {
+		min-height: 100%;
+	}
+
+	.stories {
+		min-height: 70%;
+	}
+
+	.initiatives {
+		min-height: 70%;
+	}
+
+	.history {
+		min-height: 50%;
+	}
+
+	.share {
+		min-height: 70%;
 	}
 
 }

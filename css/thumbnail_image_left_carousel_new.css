@@ -2,11 +2,13 @@
 .carousel-inner {
  overflow: visible;
  width: 100%;
+ clear: both;
 }
 
 .thumbnail_image_left_carousel_wrapper{
   overflow: visible;
   position: relative;
+  z-index: 1000;
 }
 .thumbnail_image_left_carousel_wrapper > .carousel-inner > .carousel-item > img,
 .thumbnail_image_left_carousel_wrapper > .carousel-inner > .carousel-item > a > img{
@@ -73,7 +75,6 @@
   top: 150px;
   text-align: left;
   text-shadow: none;
-  z-index: 1000;
 }
 .thumbnail_image_left_carousel_caption h1{
   font-size: 35px;
@@ -100,6 +101,7 @@
 	width: 150px;
 	text-align: center;
   color: #fff;
+  z-index: 10000;
 }
 
 .thumbnail_image_left_carousel_caption a:hover {
@@ -138,6 +140,7 @@
     overflow: visible;
     max-height: 100%;
     position: relative;
+    z-index: 10000;
   }
 
   .thumbnail_image_left_carousel_indicators{
@@ -158,6 +161,7 @@
     width: 70%;
     top: 100%;
     text-align: center;
+    z-index: 10000;
   }
 
   .thumbnail_image_left_carousel_caption a,
