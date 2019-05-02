@@ -188,12 +188,12 @@ body{
   	color: #fff;
   }
 
-  .desktop_menu{
+  #menu{
   	position: fixed;
   	top: 0;
   	left: 0;
   	height: 50px;
-  	z-index: 10000;
+  	z-index: 50;
   	width: 100%;
   	padding: 0;
   	margin:0;
@@ -239,7 +239,7 @@ body{
       width: 100%;
     }
 
-    .desktop_menu{
+    #menu{
       display: none;
     }
 
@@ -247,16 +247,11 @@ body{
      * --------------------------------------- */
 
    .mobile_menu {
-     position: fixed;
-   	top: 0;
-   	left: 0;
-   	height: 60px;
-   	z-index: 10000;
-   	width: 100%;
-   	padding: 20px;
-   	margin:0;
-     background-color: #000;
      display: block;
+     height: 60px;
+     width: 100%;
+     padding: 20px;
+     height: 60px;
    }
 
   #menuToggle {
