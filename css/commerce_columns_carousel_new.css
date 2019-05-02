@@ -108,7 +108,7 @@
 }
 
 .commerce_columns_item_caption{
-
+  z-index: 1000;
 }
 .commerce_columns_item_caption>h3 a,
 .commerce_columns_item_caption>h3 a:visited{
@@ -135,6 +135,7 @@
 	width: 150px;
 	text-align: center;
   color: #fff;
+  z-index: 1000;
 }
 .commerce_columns_item_caption> a:hover,
 .commerce_columns_item_caption> a:active{
@@ -147,7 +148,7 @@
   .col {padding-left: 0px; padding-right: 0px;}
 
   .initiatives_intro {
-    width: 80%;    
+    width: 80%;
     padding: 20px 0px;
   }
 
