@@ -1,5 +1,5 @@
 .basic_subpage {
-  padding-top: 10%;
+  padding-top: 70px;
   width: 50%;
   margin: 0px auto;
   text-align: center;
@@ -55,7 +55,10 @@
 }
 
 
-.history_wrapper {background-color: #000;}
+.history_wrapper {
+  background-color: #000;
+  margin-top: 70px;
+}
 
 .history_intro {
   float:left;
@@ -206,6 +209,10 @@
   background-position: center top;
   background-attachment: relative;
   background-image: url(../images/history_quiz_6.png);
+}
+
+.interveiw_subpages {
+  margin-top: 70px;
 }
 
 .interview_wrapper {
