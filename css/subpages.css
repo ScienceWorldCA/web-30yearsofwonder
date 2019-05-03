@@ -213,6 +213,8 @@
 
 .interveiw_subpages {
   margin-top: 70px;
+  clear: both;
+  display: block;
 }
 
 .interview_wrapper {

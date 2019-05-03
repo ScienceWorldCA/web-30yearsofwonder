@@ -6,6 +6,7 @@
    margin: 0px;
    padding: 0px;
    background-color: #000;
+   overflow-x: hidden;
  }
 
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
@@ -198,13 +199,21 @@ h5 {
     background-color: #000;
     overflow: hidden;
     display: block;
+    clear: both;
   }
 
   .mobile_menu {
     display: none;
   }
 
-
+.bottom {
+  text-align: center;
+  width: 100%;
+  margin: 20px auto;
+  display: block;
+  padding-top: 20px;
+  background-color: #000;
+}
 
   /*------------------------------------------------------*/
   /* RESPONSIVE
