@@ -38,6 +38,24 @@ a.button {
   letter-spacing: 1px;
 }
 
+a.button_sub {
+	text-decoration:none;
+  border: solid 1px #ff7800;
+	padding: 10px 20px;
+	font-weight: bold;
+	width: 150px;
+	text-align: center;
+	text-transform: uppercase;
+	margin-top: 10px;
+	color: #ff7800;
+	font-size: 15px;
+  letter-spacing: 1px;
+}
+
+a:hover.button_sub {
+	opacity: 0.5;
+}
+
 a:hover.button {
 	color: #ff7800;
 }
