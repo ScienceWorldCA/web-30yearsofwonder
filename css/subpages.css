@@ -317,6 +317,14 @@
   background-size: cover;
 }
 
+.interview_banner_max {
+  background: url(../images/Max_Banner.png) no-repeat left center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 @media only screen and (orientation: portrait) {
 
   .interview_wrapper {
